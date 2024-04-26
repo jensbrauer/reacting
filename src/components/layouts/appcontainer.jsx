@@ -1,6 +1,7 @@
 import React  from "react"
 import { NavLink } from "react-router-dom"
 import { Route, Routes } from "react-router-dom";
+import { Landing } from "../landing"
 import { PageOne } from "../pageone"
 import { PageTwo } from "../pagetwo"
 import Container from 'react-bootstrap/Container';
@@ -14,14 +15,14 @@ export default function AppContainer() {
         <div>
             <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" data-bs-theme="dark">
               <Container>
-                <Navbar.Brand href="#home">Saddle Scanning</Navbar.Brand>
+                <Navbar.Brand href="/">SADDLE SCANNING</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
                   </Nav>
-                  <Nav>
-                    <NavLink className="nav-link" to="/pageOne">show page one</NavLink>
-                    <NavLink className="nav-link" to="/pageTwo">show page two</NavLink>
+                  <Nav>{/* 
+                    <NavLink className="nav-link" to="/pageOne">show page one</NavLink> */}
+                    <NavLink className="nav-link" to="/pageTwo">Booking</NavLink>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
@@ -30,6 +31,7 @@ export default function AppContainer() {
                     
             <main>
               <Routes>
+                <Route path="/" element={ <Landing /> } />
                 <Route path="/pageOne" element={ <PageOne /> } />
                 <Route path="/pageTwo" element={ <PageTwo /> } />
               </Routes>

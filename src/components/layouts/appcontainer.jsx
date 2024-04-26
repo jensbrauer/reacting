@@ -15,7 +15,7 @@ export default function AppContainer() {
         <div>
             <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" data-bs-theme="dark">
               <Container>
-                <Navbar.Brand href="/">SADDLE SCANNING</Navbar.Brand>
+                <Navbar.Brand href="/reacting/">SADDLE SCANNING</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">

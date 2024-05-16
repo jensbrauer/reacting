@@ -14,7 +14,7 @@ export default function AppContainer() {
         <div className="full-page">
             <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" data-bs-theme="dark">
               <Container>
-                <Navbar.Brand href="/reacting/">EQUESTRIAN 3D</Navbar.Brand>
+                <Navbar.Brand href="/">EQUESTRIAN 3D</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="me-auto">
